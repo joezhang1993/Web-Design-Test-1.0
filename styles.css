@@ -1,0 +1,114 @@
+:root {
+  --bg: #06070c;
+  --panel: #101420;
+  --ink: #e8ebf5;
+  --muted: #9fa8be;
+  --accent: #7082ff;
+}
+
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  font-family: 'Inter', 'Noto Sans TC', system-ui, sans-serif;
+  color: var(--ink);
+  background:
+    radial-gradient(circle at 15% 15%, rgba(112,130,255,0.2), transparent 35%),
+    radial-gradient(circle at 80% 30%, rgba(83,93,133,0.25), transparent 33%),
+    var(--bg);
+}
+
+.hero {
+  min-height: 78vh;
+  display: grid;
+  place-content: center;
+  text-align: center;
+  gap: 1.2rem;
+  padding: 8vh 6vw 4vh;
+}
+.eyebrow { color: var(--accent); letter-spacing: .18em; text-transform: uppercase; font-size: .78rem; }
+.hero h1 { margin: 0; font-size: clamp(2rem, 5.3vw, 4.6rem); line-height: 1.08; }
+.subtitle { margin: 0 auto; max-width: 760px; color: var(--muted); font-size: clamp(1rem, 1.8vw, 1.3rem); }
+.concept-art { width: min(88vw, 980px); margin: 1rem auto 0; border-radius: 20px; border: 1px solid rgba(255,255,255,.1); box-shadow: 0 22px 50px rgba(0,0,0,.4); }
+
+.assembly { position: relative; }
+.stage-wrap {
+  position: sticky;
+  top: 6vh;
+  height: 88vh;
+  display: grid;
+  place-items: center;
+  pointer-events: none;
+}
+.stage {
+  position: relative;
+  width: min(62vw, 760px);
+  aspect-ratio: 1.5/1;
+  filter: drop-shadow(0 35px 35px rgba(0,0,0,.45));
+}
+.part {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  transform: translate3d(var(--from-x, 0), var(--from-y, 0), 0) scale(var(--from-scale, .8));
+  transition: opacity .6s ease;
+  will-change: transform, opacity;
+}
+.glow {
+  position: absolute;
+  inset: auto 20% -10% 20%;
+  height: 24%;
+  background: radial-gradient(ellipse at center, rgba(112,130,255,.55), rgba(112,130,255,0) 70%);
+  filter: blur(20px);
+  opacity: .55;
+}
+
+.part-shell { --from-y: -34vh; --from-scale: .94; z-index: 8; }
+.part-wheel { --from-x: -28vw; --from-y: -22vh; --from-scale: .58; z-index: 9; }
+.part-side { --from-x: 29vw; --from-y: -8vh; --from-scale: .62; z-index: 7; }
+.part-pcb { --from-x: -25vw; --from-y: 14vh; --from-scale: .6; z-index: 5; }
+.part-switch { --from-x: 26vw; --from-y: 20vh; --from-scale: .58; z-index: 6; }
+.part-sensor { --from-x: 0vw; --from-y: 28vh; --from-scale: .55; z-index: 4; }
+.part-battery { --from-x: 23vw; --from-y: 30vh; --from-scale: .62; z-index: 3; }
+
+.step {
+  min-height: 92vh;
+  display: grid;
+  align-items: center;
+  padding: 7vh 8vw;
+}
+.step article {
+  width: min(460px, 90vw);
+  background: linear-gradient(145deg, rgba(16,20,32,.8), rgba(9,11,18,.7));
+  border: 1px solid rgba(255,255,255,.08);
+  border-radius: 16px;
+  padding: 1.5rem 1.35rem;
+  backdrop-filter: blur(10px);
+  opacity: .2;
+  transform: translateY(18px);
+  transition: opacity .45s ease, transform .45s ease;
+}
+.step.active article { opacity: 1; transform: translateY(0); }
+.step h2 { margin: 0 0 .7rem; font-size: clamp(1.25rem, 2.6vw, 2rem); }
+.step p { margin: 0; color: #ced5e7; line-height: 1.8; }
+.left { justify-items: start; }
+.right { justify-items: end; text-align: left; }
+
+.finale {
+  min-height: 62vh;
+  display: grid;
+  place-content: center;
+  text-align: center;
+  padding: 6vh 5vw 10vh;
+}
+.finale h3 { margin: 0 0 .6rem; font-size: clamp(1.6rem,3.3vw,2.9rem); }
+.finale p { margin: 0; color: var(--muted); }
+
+@media (max-width: 900px) {
+  .stage-wrap { top: 2vh; height: 62vh; }
+  .stage { width: min(96vw, 680px); }
+  .step { min-height: 84vh; }
+  .left, .right { justify-items: center; }
+  .step article { text-align: left; }
+}
