@@ -1,0 +1,19 @@
+<svg viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg">
+  <g fill="none" stroke="#d6dbe2">
+    <g transform="translate(420 330)">
+      <circle r="80" stroke-width="10"/>
+      <circle r="18" stroke-width="7"/>
+      <path d="M0-95 L0-80 M67-67 L56-56 M95 0 L80 0 M67 67 L56 56 M0 95 L0 80 M-67 67 L-56 56 M-95 0 L-80 0 M-67-67 L-56-56" stroke-width="9"/>
+    </g>
+    <g transform="translate(280 470)">
+      <circle r="58" stroke-width="8"/>
+      <circle r="14" stroke-width="6"/>
+      <path d="M0-72 L0-58 M51-51 L43-43 M72 0 L58 0 M51 51 L43 43 M0 72 L0 58 M-51 51 L-43 43 M-72 0 L-58 0 M-51-51 L-43-43" stroke-width="8"/>
+    </g>
+    <g transform="translate(530 505)">
+      <circle r="44" stroke-width="7"/>
+      <circle r="11" stroke-width="5"/>
+      <path d="M0-57 L0-44 M40-40 L33-33 M57 0 L44 0 M40 40 L33 33 M0 57 L0 44 M-40 40 L-33 33 M-57 0 L-44 0 M-40-40 L-33-33" stroke-width="7"/>
+    </g>
+  </g>
+</svg>
