@@ -3,103 +3,102 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Keychron G3 Exploded Precision</title>
+    <title>Keychron G3 | 爆炸視圖組裝 Landing Page</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;800&family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header class="hero">
-      <p class="eyebrow">Exploded Engineering / G3 Series</p>
-      <h1>從微米級結構，到毫秒級反應</h1>
-      <p class="subtitle">
-        以 Keychron G3 Ultra-Light Wireless Mouse 為靈感，打造一個從零件到整機的視差組裝體驗。
-      </p>
-      <img class="concept-art" src="assets/concept.svg" alt="電競滑鼠概念圖" />
+      <div class="hero-copy">
+        <p class="kicker">KEYCHRON G3 · INSPIRED CONCEPT</p>
+        <h1>像你上傳圖那樣，<br />把一隻滑鼠拆到最細，再組回去。</h1>
+        <p>
+          參照 Keychron G3 的透明黑 + 電藍語言，重做為「視差爆炸組裝」敘事：
+          每一段滾動，下一個機械零件進場、上一段文案淡出。
+        </p>
+        <div class="spec-pills">
+          <span>44g Ultra-Light</span>
+          <span>PixArt 3950</span>
+          <span>8K Polling</span>
+          <span>500mAh</span>
+          <span>Tri-Mode</span>
+        </div>
+        <a class="cta" href="https://www.keychron.com/products/keychron-g3-ultra-light-wireless-mouse" target="_blank" rel="noreferrer">查看官方产品页</a>
+      </div>
+      <div class="hero-visual">
+        <img src="assets/concept.svg" alt="電競滑鼠概念圖" />
+      </div>
     </header>
 
-    <main class="assembly" id="assembly">
-      <div class="stage-wrap">
-        <div class="stage" id="stage">
-          <img class="part part-shell" data-index="0" src="assets/shell.svg" alt="滑鼠外殼" />
-          <img class="part part-wheel" data-index="1" src="assets/wheel.svg" alt="滾輪模組" />
-          <img class="part part-side" data-index="2" src="assets/side-buttons.svg" alt="側鍵模組" />
-          <img class="part part-pcb" data-index="3" src="assets/pcb.svg" alt="PCB 主板" />
-          <img class="part part-switch" data-index="4" src="assets/switch.svg" alt="微動開關" />
-          <img class="part part-sensor" data-index="5" src="assets/sensor.svg" alt="感測器模組" />
-          <img class="part part-battery" data-index="6" src="assets/battery.svg" alt="電池模組" />
-          <div class="glow"></div>
+    <main id="story" class="story">
+      <div class="sticky-stage">
+        <div id="assembly-canvas" class="assembly-canvas">
+          <img class="part shell" data-step="0" src="assets/shell.svg" alt="外殼" />
+          <img class="part wheel" data-step="1" src="assets/wheel.svg" alt="滾輪" />
+          <img class="part side" data-step="2" src="assets/side-buttons.svg" alt="側鍵" />
+          <img class="part pcb" data-step="3" src="assets/pcb.svg" alt="PCB" />
+          <img class="part switch" data-step="4" src="assets/switch.svg" alt="微動開關" />
+          <img class="part sensor" data-step="5" src="assets/sensor.svg" alt="感測器" />
+          <img class="part battery" data-step="6" src="assets/battery.svg" alt="電池" />
+          <div class="base-glow"></div>
         </div>
       </div>
 
-      <section class="step left" data-step="0">
+      <section class="panel left" data-index="0">
         <article>
-          <h2>透明外殼 × 結構語言</h2>
-          <p>
-            半透明上蓋與深色下殼共同構成克制而高端的輪廓，讓內部機械美學若隱若現，延續經典人體工學弧線。
-          </p>
+          <h2>01 外殼骨架</h2>
+          <p>先放上半透明外殼，延續你給的參考圖：深煙黑材質、內構若隱若現，形體先立起來。</p>
         </article>
       </section>
 
-      <section class="step right" data-step="1">
+      <section class="panel right" data-index="1">
         <article>
-          <h2>精密滾輪模組</h2>
-          <p>
-            高抓握紋理滾輪以低阻尼軸心結構提供細膩段落感，兼顧 FPS 快速切槍與日常精準滾動控制。
-          </p>
+          <h2>02 滚轮模组</h2>
+          <p>电蓝滚轮从中轴落位，强调抓握纹理与段落反馈，视觉上对齐上传图里的蓝色识别特征。</p>
         </article>
       </section>
 
-      <section class="step left" data-step="2">
+      <section class="panel left" data-index="2">
         <article>
-          <h2>雙側鍵，瞬時指令</h2>
-          <p>
-            前後側鍵針對拇指自然落點校準，回彈路徑短、確認感明確，讓技能釋放與武器切換更俐落。
-          </p>
+          <h2>03 侧键机构</h2>
+          <p>双侧键从右侧滑入，按压路径更短，拇指动作更快，偏向电竞的“触发即反馈”。</p>
         </article>
       </section>
 
-      <section class="step right" data-step="3">
+      <section class="panel right" data-index="3">
         <article>
-          <h2>主控 PCB 與 8K 架構</h2>
-          <p>
-            以高整合電路板承載核心運算與傳輸，2.4G 模式下可達 8K polling，將延遲壓縮至競技級區間。
-          </p>
+          <h2>04 主控 PCB</h2>
+          <p>主板归位后，整机逻辑成型：围绕 PixArt 3950 构建，支持 8K 回报与多模式连接切换。</p>
         </article>
       </section>
 
-      <section class="step left" data-step="4">
+      <section class="panel left" data-index="4">
         <article>
-          <h2>微動開關，清脆觸發</h2>
-          <p>
-            左右鍵採用高壽命微動方案，觸發點穩定、聲學回饋乾淨，維持長時間對戰中的節奏一致性。
-          </p>
+          <h2>05 微动开关</h2>
+          <p>左右键微动补上击发核心，强调清脆触发与高寿命，适配高频点击场景。</p>
         </article>
       </section>
 
-      <section class="step right" data-step="5">
+      <section class="panel right" data-index="5">
         <article>
-          <h2>旗艦級感測器平台</h2>
-          <p>
-            高階光學感測器提供高 DPI、低抖動追蹤與穩定 lift-off control，滿足低敏到高速甩槍的完整範圍。
-          </p>
+          <h2>06 传感器单元</h2>
+          <p>感测器模块居中锁定，跟踪精度、抬升距离控制和高速甩枪稳定性都在这一层完成。</p>
         </article>
       </section>
 
-      <section class="step left" data-step="6">
+      <section class="panel left" data-index="6">
         <article>
-          <h2>輕量電池，續航平衡</h2>
-          <p>
-            緊湊電池模組與主板協同供電，在重量與續航間取得平衡，確保長時間無線對戰依然維持穩定輸出。
-          </p>
+          <h2>07 电池与重心</h2>
+          <p>500mAh 电池压在合理重心上方，最后把续航与手感平衡收束成一只完整的竞技鼠标。</p>
         </article>
       </section>
     </main>
 
-    <section class="finale">
-      <h3>Assembled for Victory</h3>
-      <p>當最後一個零件歸位，速度、重量與手感形成完整閉環。</p>
+    <section class="ending">
+      <h3>Exploded. Tuned. Assembled.</h3>
+      <p>从零件到整机，像你给的图那样，逐层解释每个“为什么”。</p>
     </section>
 
     <script src="script.js"></script>
